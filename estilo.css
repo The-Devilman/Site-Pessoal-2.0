@@ -28,7 +28,7 @@ div.ini{
 
 
 div.ex0{
-  margin-top: 40px;
+  margin-top: 43px;
   overflow: auto;
   overflow-x: hidden;
   border: solid 5px; 
@@ -135,6 +135,7 @@ div.ex3 {
 .navb{
   background-color: black;
    text-align: center;
+   border: solid 2px beige;
 }
 
 
@@ -345,10 +346,13 @@ div.ex7{
   text-align: center;
 }
 
+.c1{
+  margin-top: 7%;
+}
+
 .ex4{
   border:solid 5px; 
   color:#ebaaaa; 
-  margin-top: 5%;
   background-image: url(imagens/pong.gif); 
   background-repeat: no-repeat; 
   background-size: cover;
@@ -477,9 +481,9 @@ div.ex7{
 
 
   button, button::after {
-    width: 180px;
-    height: 56px;
-    font-size: 30px;
+    width: 120px;
+    height: 50px;
+    font-size: 35px;
     font-family: 'Bebas Neue', cursive;
     background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
     border: 0;
