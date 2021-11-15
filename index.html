@@ -14,17 +14,14 @@
 
 
 
-    <div class="page">
-      <nav class="navb d-flex bd-highlight fixed-top">
-        <ul class="snip1189">
-          <li><a href="#">Home</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#projeto">Projetos</a></li>
-          <li><a href="#comentarios">Comentários</a></li>
-        </ul>
-      </nav>
-
-
+    <div class="container">
+  <div class="navb d-flex bd-highlight fixed-top">
+  <div class="p-2 flex-fill bd-highlight"><a class="navc" href="#">Home</div></a> 
+  <div class="p-2 flex-fill bd-highlight"><a class="navc" href="#hobbies">Hobbies</div></a>
+  <div class="p-2 flex-fill bd-highlight"><a class="navc" href="#projeto" >Projeto</div></a>
+  <div class="p-2 flex-fill bd-highlight"><a class="navc" href="#comentarios">Comentários</div></a>
+  </div>
+  </div>
 
   <div class="ex0 container-fluid">
     <div class="ini container"><h1>Luis Felipe Previ</h1>
@@ -475,11 +472,10 @@
 
 
 <div id="comentarios">
- <div class="c1 container">
-  <h1 class="intros">Comentários:</h1>
+ <div class="ex7 container">
+  <h1 class="intros">Aba de Comentários:</h1>
  </div>
   <div class="ex4 container">
-    
     <div id="intro">
          <div class="container-xl3 text-center">
           <div class="row">
@@ -487,11 +483,12 @@
               <div class="cardtop card-transparent">
                 <div class="card-body">
                   <form action="comentarios.php" method="post" enctype="multipart/form">
-                    <h3 class="nome" style="color: aliceblue;">Nome:</h3>
-                        <input type="text" name="nome" style="color: aliceblue; background-color: black;" placeholder="Ex: Luis Previ">
-
-                    <h3 class="turma" style="color: aliceblue;">Turma:</h3>
-                        <select name="turma" style="color: aliceblue; background-color: black;">
+                    <h3>Nome:</h3>
+                    <br>
+                        <input type="text" name="nome">
+                    <h3 >Turma:</h3>
+                    <br>
+                        <select name="turma">
                             <option value="0">Selecione...</option>
 
                             <option value="1C">1ºC</option>
@@ -505,12 +502,10 @@
             <div class="col-sm-6">
               <div class="cardtop1 card-transparent">
                 <div class="card-body">
-                  <h3 style="color: aliceblue;">Digite aqui seu comentario:</h3>
+                  <h3 class=>Digite aqui seu comentario:</h3>
                    
-                  <textarea name="comentarios" id="comentarios" rows="6" cols="900"  maxlength="300" style="background-color: black; color: aliceblue;" placeholder="Comentários mal intecionados serão excluídos."></textarea>
-                  <link rel="preconnect" href="https://fonts.gstatic.com"> 
-              <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-            <button type="submit" value="Enviar">Enviar</button>
+                  <textarea name="comentarios" id="comentarios" rows="6" cols="900"  maxlength="300" style=></textarea>
+                  <button type="submit" class="btn btn-secondary" value="Enviar">Enviar</button>
              </div>
     </form>
                 </div>

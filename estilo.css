@@ -28,6 +28,7 @@ div.ini{
 
 
 div.ex0{
+  margin-top: 40px;
   overflow: auto;
   overflow-x: hidden;
   border: solid 5px; 
@@ -37,7 +38,6 @@ div.ex0{
   background-size: cover; 
   background-position: top; 
   padding-bottom: 50px;
-  margin-top: 58px;
 }
 
 .aboutme{
@@ -134,7 +134,7 @@ div.ex3 {
 
 .navb{
   background-color: black;
-
+   text-align: center;
 }
 
 
@@ -345,13 +345,10 @@ div.ex7{
   text-align: center;
 }
 
-.c1{
-  margin-top: 7%;
-}
-
 .ex4{
   border:solid 5px; 
   color:#ebaaaa; 
+  margin-top: 5%;
   background-image: url(imagens/pong.gif); 
   background-repeat: no-repeat; 
   background-size: cover;
@@ -479,151 +476,4 @@ div.ex7{
   }
 
 
-  button, button::after {
-    width: 120px;
-    height: 45px;
-    font-size: 27px;
-    font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
-    border: 0;
-    color: #fff;
-    letter-spacing: 1px;
-    line-height: 44px;
-    box-shadow: 6px 0px 0px #00E6F6;
-    outline: transparent;
-    position: relative;
-  }
-  
-  button::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-    
-    content: 'Enviar';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-    clip-path: var(--slice-0);
-  }
-  
-  button:hover::after {
-    animation: 1s glitch;
-    animation-timing-function: steps(2, end);
-  }
-  
-  @keyframes glitch {
-    0% {
-      clip-path: var(--slice-1);
-      transform: translate(-20px, -10px);
-    }
-    10% {
-      clip-path: var(--slice-3);
-      transform: translate(10px, 10px);
-    }
-    20% {
-      clip-path: var(--slice-1);
-      transform: translate(-10px, 10px);
-    }
-    30% {
-      clip-path: var(--slice-3);
-      transform: translate(0px, 5px);
-    }
-    40% {
-      clip-path: var(--slice-2);
-      transform: translate(-5px, 0px);
-    }
-    50% {
-      clip-path: var(--slice-3);
-      transform: translate(5px, 0px);
-    }
-    60% {
-      clip-path: var(--slice-4);
-      transform: translate(5px, 10px);
-    }
-    70% {
-      clip-path: var(--slice-2);
-      transform: translate(-10px, 10px);
-    }
-    80% {
-      clip-path: var(--slice-5);
-      transform: translate(20px, -10px);
-    }
-    90% {
-      clip-path: var(--slice-1);
-      transform: translate(-10px, 0px);
-    }
-    100% {
-      clip-path: var(--slice-1);
-      transform: translate(0);
-    }
-  } 
-
-
-.turma{
-  margin-top: 4%;
-}
-
-.nome{
-  margin-top: 6%;
-}
  
-  .snip1189 li {
-    display: inline-block;
-    margin: 0 7em;
-    padding-top: 10px;
-  }
-  .snip1189 a {
-    padding: 0.2em 0.9em;
-    margin-top: 4px;
-    display: block;
-    color: rgba(255, 255, 255, 0.5);
-    position: relative;
-    text-decoration: none;
-  }
-  .snip1189 a:before,
-  .snip1189 a:after {
-    height: 30px;
-    width: 25px;
-    position: absolute;
-    content: '';
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-    opacity: 0;
-  }
-  .snip1189 a:before {
-    left: 0;
-    top: 0;
-    border-left: 3px solid #c0392b;
-    border-top: 3px solid #c0392b;
-    -webkit-transform: translate(100%, 50%);
-    transform: translate(100%, 50%);
-  }
-  .snip1189 a:after {
-    right: 0;
-    bottom: 0;
-    border-right: 3px solid #c0392b;
-    border-bottom: 3px solid #c0392b;
-    -webkit-transform: translate(-100%, -50%);
-    transform: translate(-100%, -50%);
-  }
-  .snip1189 a:hover,
-  .snip1189 .current a {
-    color: #ffffff;
-  }
-  .snip1189 a:hover:before,
-  .snip1189 .current a:before,
-  .snip1189 a:hover:after,
-  .snip1189 .current a:after {
-    -webkit-transform: translate(0%, 0%);
-    transform: translate(0%, 0%);
-    opacity: 1;
-  }
-  
