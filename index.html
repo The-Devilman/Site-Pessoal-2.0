@@ -15,7 +15,7 @@
 
 
     <div class="container">
-  <div class="navb d-flex bd-highlight fixed-top">
+  <div class="navb d-flex bd-highlight fixed-top" style="border: solid 2px white;">
   <div class="p-2 flex-fill bd-highlight"><a class="navc" href="#">Home</div></a> 
   <div class="p-2 flex-fill bd-highlight"><a class="navc" href="#hobbies">Hobbies</div></a>
   <div class="p-2 flex-fill bd-highlight"><a class="navc" href="#projeto" >Projeto</div></a>
@@ -31,7 +31,7 @@
       <div class="col-sm-6">
         <div class="card-transparent">
           <div class="card-body">
-    <div class="fotos2">
+    <div class="fotos1">
                 <img class="image2 rounded" src="imagens/" width="300" height="300">
               </div>
           </div>
@@ -121,7 +121,7 @@
 
 
                         <div class="embed-responsive">
-                          <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A19qe0dEsOpQBXk0ZCEb5o7"  allowtransparency="true" allow="encrypted-media"></iframe>
+                          <iframe src="https://open.spotify.com/embed?uri=spotify%3Aplaylist%3A3KPAIyVVb2RyZDfOPEQJcY" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </div>
                       </div>
                     </div>
@@ -483,12 +483,13 @@
               <div class="cardtop card-transparent">
                 <div class="card-body">
                   <form action="comentarios.php" method="post" enctype="multipart/form">
-                    <h3>Nome:</h3>
-                    <br>
-                        <input type="text" name="nome">
-                    <h3 >Turma:</h3>
-                    <br>
-                        <select name="turma">
+                    <div class="nome">
+                    <h3 style="color: aliceblue;">Nome:</h3>
+                        <input type="text" name="nome" style="color: aliceblue; background-color: black;">
+                      </div>
+                      <div class="turma">
+                    <h3 style="color: aliceblue;">Turma:</h3>
+                        <select name="turma" style="color: aliceblue; background-color: black;">
                             <option value="0">Selecione...</option>
 
                             <option value="1C">1ºC</option>
@@ -496,15 +497,16 @@
                             <option value="3C">3ºC</option>
 
                         </select>
+                      </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="cardtop1 card-transparent">
                 <div class="card-body">
-                  <h3 class=>Digite aqui seu comentario:</h3>
+                  <h3 style="color: aliceblue;">Digite aqui seu comentario:</h3>
                    
-                  <textarea name="comentarios" id="comentarios" rows="6" cols="900"  maxlength="300" style=></textarea>
+                  <textarea name="comentarios" id="comentarios" rows="6" cols="900"  maxlength="300" style="color: aliceblue; background-color: black;"></textarea>
                   <button type="submit" class="btn btn-secondary" value="Enviar">Enviar</button>
              </div>
     </form>
