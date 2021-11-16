@@ -607,7 +607,7 @@ button:hover::after {
  
 
  .text--glitch {
-  animation: animate .9s linear infinite;
+  animation: animate 2000ms linear infinite;
  }
  
  @keyframes animate {
