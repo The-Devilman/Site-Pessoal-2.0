@@ -15,7 +15,7 @@ $conexao = new PDO('mysql:host=127.0.0.1;dbname=site pessoal','root','');
 $conexao->exec($sql);
 
 
-header("Location: index.html#comentarios");
+header("Location: index.html");
 
 die();
 

@@ -445,6 +445,30 @@ div.ex7{
 }
 
 
+
+
+.gradient2 {
+ 
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent;
+  
+  background-size: 300%;
+  background-position: -100%;
+  background-repeat: repeat;
+
+  
+  animation: animation-iteration-count 15s infinite;
+}
+
+@keyframes animation-iteration-count{
+  to{
+    background-position: 100%; 
+  }
+}
+
+
 .comment.nometurma{
     width: 40%;
 }
@@ -477,13 +501,7 @@ div.ex7{
   }
 
 
-.nome{
-  margin-top: 6%;
-}
 
-.turma{
-  margin-top: 5%;
-}
 
 
 
@@ -573,3 +591,36 @@ button:hover::after {
     transform: translate(0);
   }
 }
+
+
+
+
+
+ .text--glitch {
+   margin-top: 5%;
+  color: yellow;
+  font-family: sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+ }
+ 
+
+ .text--glitch {
+  animation: animate .9s linear infinite;
+ }
+ 
+ @keyframes animate {
+  0%, 100% {
+   text-shadow: -1.5px -1.5px 0 #0ff, 2px 2px 0 #f00;
+  }
+  25% {
+   text-shadow: 2px 2px 0 #0ff, -1.5px -1.5px 0 #f00;
+  }
+  50% {
+   text-shadow: 1.5px -2px 0 #0ff, -2px 1.5px 0 #f00;
+  }
+  75% {
+   text-shadow: -2px 1.5px 0 #0ff, 1.5px -2px 0 #f00;
+  }
+ }
